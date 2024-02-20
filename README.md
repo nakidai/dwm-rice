@@ -5,7 +5,7 @@ It includes patched dwm with gaps, st and tcsh config, all in the catppuccin fra
 
 Bar
 --
-I wrote this in python, because why not? Place keep sysbar.py and dwmbar/ together, because sysbar.py includes last one.  
+I wrote this in python, because why not? Please keep sysbar.py and dwmbar/ together, because sysbar.py includes last one.  
 
 Background
 --
