@@ -24,4 +24,4 @@ exec dwm
 Dependencies
 --
 DWM additionally depends on scrot for screenshots and amixer (`alsa-utils` in archlinux).  
-Bar depends on python, psutils python package for pc info and [getlayout](https://git.nakidai.ru/nakidai/getlayout) script for getting X11 layout.  
+Bar depends on python, psutils python package for pc info and [getlayout](https://github.com/nakidai/getlayout) script for getting X11 layout.  
