@@ -1,0 +1,32 @@
+set SHELL="`which tcsh`"
+if ($?prompt) then
+    set complete=enhance
+
+    set __prompt_key='$'
+    if ($USER == "root") set __prompt_key='#'
+
+    alias __git_current_branch 'git rev-parse --abbrev-ref HEAD >& /dev/null && echo "(`git rev-parse --abbrev-ref HEAD`) "'
+
+    set __reset_cursor="%{\e[3 q%}"
+    set __reset_color="%{\033[0m%}"
+    set __host_color="${__reset_color}%{\033[38;2;140;170;238m%}"
+    set __git_color="${__reset_color}%{\033[38;2;131;139;167m%}"
+    set __path_color="${__reset_color}%{\033[1m%}%{\033[38;2;202;158;230m%}"
+
+    alias precmd 'set __last_code=$?; source ~/.precmd.tcsh'
+endif
+
+set EDITOR=nvim
+
+alias .. "cd .."
+alias ... "cd ../.."
+alias .... "cd ../../.."
+alias ..... "cd ../../../.."
+
+alias dp    "doas pacman"
+alias stdn  "doas shutdown -ah 0"
+alias rbot  "doas reboot"
+alias dv    "doas nvim"
+alias vi    "nvim"
+alias vis   "nvim -S Session.vim"
+alias ls    "ls --color"
